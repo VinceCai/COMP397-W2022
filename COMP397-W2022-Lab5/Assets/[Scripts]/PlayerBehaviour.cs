@@ -18,6 +18,8 @@ public class PlayerBehaviour : MonoBehaviour
     public LayerMask groundMask;
     public bool isGrounded;
 
+    
+
 
 
     // Start is called before the first frame update
@@ -57,4 +59,8 @@ public class PlayerBehaviour : MonoBehaviour
         Gizmos.color = Color.white;
         Gizmos.DrawWireSphere(groundCheck.position, groundRadius);
 	}
+
+  
+
+    
 }
