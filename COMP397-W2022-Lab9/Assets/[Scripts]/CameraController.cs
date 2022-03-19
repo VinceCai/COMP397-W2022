@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public float mouseSensitivity = 1000.0f;
+    public float mouseSensitivity = 10.0f;
     public Transform playerBody;
     public Joystick rightJoystick;
 
@@ -13,17 +13,32 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;    
+        if(Application.platform != RuntimePlatform.Android)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-		//float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity + rightJoystick.Horizontal;
-		//float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity + rightJoystick.Vertical;
+        float mouseX;
+        float mouseY;
 
-		float mouseX = rightJoystick.Horizontal;
-		float mouseY = rightJoystick.Vertical;
+        if(Application.platform != RuntimePlatform.Android)
+        {
+            mouseX = Input.GetAxis("Mouse X") * mouseSensitivity;
+            mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
+        }
+		else
+		{
+            mouseX = rightJoystick.Horizontal;
+            mouseY = rightJoystick.Vertical;
+        }
+
+
+        
 
 
         XRotation -= mouseY;
