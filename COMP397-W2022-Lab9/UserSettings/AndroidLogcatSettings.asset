@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "emulator-5554",
         "name": "ca.vincecaistudio.comp397lab9",
-        "processId": 3392,
+        "processId": 4094,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -36,6 +36,18 @@
             "deviceId": "emulator-5554",
             "name": "ca.vincecaistudio.comp397lab9",
             "processId": 3392,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "ca.vincecaistudio.comp397lab9",
+            "processId": 3902,
+            "exited": false
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "ca.vincecaistudio.comp397lab9",
+            "processId": 4094,
             "exited": false
         }
     ],
