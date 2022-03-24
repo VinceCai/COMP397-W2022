@@ -9,6 +9,7 @@ using UnityEngine;
 public class GameSaveManager : MonoBehaviour
 {
     public Transform player;
+    public PlayerDataScriptableObject playerDataSO;
 
 
 
@@ -43,7 +44,9 @@ public class GameSaveManager : MonoBehaviour
         bf.Serialize(file, data);
         file.Close();
         Debug.Log("Game data saved!");
-
+        playerDataSO.position = player.position;
+        playerDataSO.rotation = player.rotation;
+        playerDataSO.playerHealth = 50;
     }
 
     void LoadGame() 
