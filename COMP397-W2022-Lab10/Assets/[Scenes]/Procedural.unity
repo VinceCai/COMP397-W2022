@@ -322,10 +322,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 400841669}
   height: 16
-  width: 24
-  depth: 24
-  min: 16
-  max: 18
+  width: 32
+  depth: 32
+  min: 32
+  max: 32
   tileParent: {fileID: 1874987752}
   threeDTile: {fileID: 2485390057611681862, guid: f1f0374e9a271e942a9c058e099ed83a,
     type: 3}
