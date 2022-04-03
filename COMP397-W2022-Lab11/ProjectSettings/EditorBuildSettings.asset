@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/[Scenes]/Main.unity
     guid: c850ee8c3b14cc8459e7e186857cf567
-  - enabled: 1
+  - enabled: 0
     path: Assets/[Scenes]/Procedural.unity
     guid: 7d4f2a0917e00614a870f10f1622b68f
+  - enabled: 1
+    path: Assets/[Scenes]/NetCode.unity
+    guid: 3e5534afe2311b344b345cb11b3c669c
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: d250e1069e8b10044800bf2f85fa8cd5,
       type: 2}
